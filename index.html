@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alan Mekbel · Blog</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --gold: #C9A84C; --gold-light: #E8CC84; --gold-dark: #8B6914;
-            --black: #080808; --dark: #111012; --dark-2: #18161A;
-            --white: #F8F6F2; --off-white: #EDE9E0; --text-muted: #8A8590;
-            --border: rgba(201,168,76,0.18);
+            --gold: #C9A84C; --gold-light: #E8CC84; --black: #080808; 
+            --dark: #111012; --dark-2: #18161A; --white: #F8F6F2; 
+            --off-white: #EDE9E0; --text-muted: #8A8590; --border: rgba(201,168,76,0.18);
         }
-
         body { background-color: var(--black); color: var(--white); font-family: 'Montserrat', sans-serif; margin: 0; }
         .container { max-width: 650px; margin: 0 auto; padding: 40px 20px; }
-
+        .hidden { display: none; }
+        
         /* Estilo Linktree */
         .link-card {
             display: block; background: var(--dark-2); border: 1px solid var(--border);
@@ -25,27 +25,11 @@
         }
         .link-card:hover { background: #3D0B15; border-color: var(--gold); }
 
-        /* Estilo Notas del Blog */
-        .note-entry {
-            margin-bottom: 60px; border-bottom: 1px solid var(--border);
-            padding-bottom: 40px; animation: fadeIn 0.8s ease;
-        }
-        .note-image {
-            width: 100%; height: 350px; object-fit: cover;
-            border: 1px solid var(--border); margin-bottom: 20px;
-            filter: sepia(0.3) contrast(1.1); /* Toque estético vintage */
-        }
-        .note-title { 
-            font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; 
-            color: var(--gold-light); margin-bottom: 10px; 
-        }
-        .note-text { 
-            font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; 
-            color: var(--off-white); line-height: 1.8;
-        }
-
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        .hidden { display: none; }
+        /* Estilo Notas */
+        .note-entry { margin-bottom: 60px; border-bottom: 1px solid var(--border); padding-bottom: 40px; }
+        .note-image { width: 100%; height: 350px; object-fit: cover; border: 1px solid var(--border); margin-bottom: 20px; }
+        .note-title { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; color: var(--gold-light); margin-bottom: 10px; }
+        .note-text { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; color: var(--off-white); line-height: 1.8; }
     </style>
 </head>
 <body>
@@ -53,11 +37,10 @@
     <div class="container">
         <div id="home">
             <h1 style="font-family: 'Cormorant Garamond'; text-align: center; font-size: 3rem; color: var(--gold);">Alan Mekbel</h1>
-            <p style="text-align: center; font-weight: 200; color: var(--text-muted); margin-bottom: 40px;">ARCHIVO PERSONAL & REDES</p>
-            
-            <a class="link-card" onclick="toggleView('blog')">ENTRAR AL BLOG</a>
-            <a href="#" class="link-card">INSTAGRAM</a>
-            <a href="#" class="link-card">PORTAFOLIO</a>
+            <div style="text-align: center; margin-bottom: 40px;">
+                <a class="link-card" onclick="toggleView('blog')">ENTRAR AL BLOG</a>
+                <a href="#" class="link-card">INSTAGRAM</a>
+            </div>
         </div>
 
         <div id="blog" class="hidden">
@@ -65,17 +48,8 @@
                 <a onclick="toggleView('home')" style="color: var(--gold); cursor: pointer;">← VOLVER</a>
                 <h2 style="font-family: 'Cormorant Garamond';">NOTAS</h2>
             </div>
-
             <div id="feed">
-                <article class="note-entry">
-                    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&q=80&w=1000" alt="Nota 1" class="note-image">
-                    <h3 class="note-title">La estética de lo efímero</h3>
-                    <p class="note-text">
-                        Esta es una nota de ejemplo. Aquí aparecerán tus pensamientos. 
-                        La imagen superior se adapta automáticamente al estilo del blog.
-                    </p>
-                </article>
-            </div>
+                </div>
         </div>
     </div>
 
@@ -83,8 +57,16 @@
         function toggleView(view) {
             document.getElementById('home').classList.toggle('hidden', view === 'blog');
             document.getElementById('blog').classList.toggle('hidden', view === 'home');
-            window.scrollTo(0,0);
         }
+
+        // Script para cargar notas de la carpeta /posts que creará el panel
+        async function loadNotes() {
+            const feed = document.getElementById('feed');
+            // Nota: En un sitio estático real, aquí podrías listar archivos de GitHub 
+            // o usar un generador como Jekyll. Para este prototipo, el panel 
+            // guardará archivos .md o .json en tu repo.
+        }
+        loadNotes();
     </script>
 </body>
 </html>
