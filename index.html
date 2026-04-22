@@ -36,22 +36,21 @@
 
     <div class="container">
         <div id="home">
-            <h1 style="font-family: 'Cormorant Garamond'; text-align: center; font-size: 3rem; color: var(--gold);">Alan Mekbel</h1>
-            <div style="text-align: center; margin-bottom: 40px;">
-                <a class="link-card" onclick="toggleView('blog')">ENTRAR AL BLOG</a>
-                <a href="#" class="link-card">INSTAGRAM</a>
-            </div>
-        </div>
+    <h1 style="font-family: 'Cormorant Garamond'; text-align: center; font-size: 3rem; color: var(--gold); margin-bottom: 5px;">Alan Mekbel</h1>
+    <p style="text-align: center; font-weight: 200; color: var(--text-muted); margin-bottom: 40px; letter-spacing: 3px; font-size: 0.7rem;">ARCHIVO PERSONAL & REDES</p>
+    
+    <div class="links-container" style="display: flex; flex-direction: column; gap: 10px;">
+        <a class="link-card" onclick="toggleView('blog')" style="background: var(--garnet-mid); border-color: var(--gold-dark);">ENTRAR AL BLOG</a>
+        
+        <a href="https://instagram.com/agranate" target="_blank" class="link-card">INSTAGRAM</a>
+        
+        <a href="https://x.com/AlanMekbel4" target="_blank" class="link-card">X (PRINCIPAL)</a>
+        
+        <a href="https://x.com/MekbelAlan" target="_blank" class="link-card">X (GENERAL)</a>
 
-        <div id="blog" class="hidden">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;">
-                <a onclick="toggleView('home')" style="color: var(--gold); cursor: pointer;">← VOLVER</a>
-                <h2 style="font-family: 'Cormorant Garamond';">NOTAS</h2>
-            </div>
-            <div id="feed">
-                </div>
-        </div>
+        <a href="mailto:alanmekbeluai@gmail.com" class="link-card" style="opacity: 0.7; font-size: 0.7rem;">CONTACTO</a>
     </div>
+</div>
 
     <script>
         function toggleView(view) {
