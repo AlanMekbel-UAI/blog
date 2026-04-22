@@ -44,7 +44,7 @@
         
         <a href="https://instagram.com/agranate" target="_blank" class="link-card">INSTAGRAM</a>
         
-        <a href="https://x.com/AlanMekbel4" target="_blank" class="link-card">X (PRINCIPAL)</a>
+        <a href="https://x.com/AlanMekbel14" target="_blank" class="link-card">X (PRINCIPAL)</a>
         
         <a href="https://x.com/MekbelAlan" target="_blank" class="link-card">X (GENERAL)</a>
 
@@ -53,19 +53,31 @@
 </div>
 
     <script>
-        function toggleView(view) {
-            document.getElementById('home').classList.toggle('hidden', view === 'blog');
-            document.getElementById('blog').classList.toggle('hidden', view === 'home');
+    function toggleView(view) {
+        document.getElementById('home').classList.toggle('hidden', view === 'blog');
+        document.getElementById('blog').classList.toggle('hidden', view === 'home');
+        window.scrollTo(0,0);
+        if(view === 'blog') {
+            renderCMSNotes();
         }
+    }
 
-        // Script para cargar notas de la carpeta /posts que creará el panel
-        async function loadNotes() {
-            const feed = document.getElementById('feed');
-            // Nota: En un sitio estático real, aquí podrías listar archivos de GitHub 
-            // o usar un generador como Jekyll. Para este prototipo, el panel 
-            // guardará archivos .md o .json en tu repo.
-        }
-        loadNotes();
-    </script>
+    async function renderCMSNotes() {
+        const feed = document.getElementById('feed');
+        
+        // Mientras no tengas notas, mostraremos este mensaje estético
+        feed.innerHTML = `
+            <div style="text-align: center; margin-top: 50px; opacity: 0.5;">
+                <p style="font-family: 'Cormorant Garamond'; font-style: italic; font-size: 1.2rem;">
+                    El archivo está siendo organizado. Pronto habrá nuevas entradas...
+                </p>
+            </div>
+        `;
+
+        // Aquí es donde en el futuro podrías conectar la lectura automática
+        // Por ahora, al publicar tu primera nota desde el /admin, 
+        // ya tendrás contenido real para mostrar.
+    }
+</script>
 </body>
 </html>
