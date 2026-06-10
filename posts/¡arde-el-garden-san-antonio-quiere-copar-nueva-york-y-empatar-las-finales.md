@@ -1,0 +1,16 @@
+---
+title: ¡ARDE EL GARDEN! SAN ANTONIO QUIERE COPAR NUEVA YORK Y EMPATAR LAS FINALES
+date: 2026-06-10T16:26:00.000-03:00
+image: https://piratasdelbasket.net/public/storage/2026/0606/tYffNEB0vO2zWNaZC36082LvfEp7NKZPtkRJLpEG.jpg
+---
+¡Qué serie tiene la NBA! La definición del campeonato está prendida fuego y esta noche promete ser un infierno. A partir de las 21:30 (hora de Argentina, el mítico Madison Square Garden va a temblar cuando New York Knicks reciba a San Antonio Spurs por el Juego 4 de las Finales 2026. Los de la Gran Manzana mandan 2-1 en el global, pero la mística tejana despertó a tiempo y el cruce arde como nunca.
+
+La historia de esta definición viene siendo rarísima, de esas que vuelven locos a los amantes de la naranja. Rompiendo todos los papeles, los tres primeros partidos se los llevaron los visitantes. Los Knicks clavaron dos batacazos históricos en Texas (105-95 y un agónico 105-104) para poner la serie patas arriba. Pero cuando parecía que en Nueva York se armaba la fiesta total y liquidaban la historia, San Antonio metió un zarpazo de campeón en el Juego 3 ganando 115-111 y cortándole a NY un invicto demoledor de 13 partidos al hilo en estos Playoffs.
+
+El gran responsable de que los Spurs sigan con vida tiene nombre, apellido y una altura que asusta: Victor Wembanyama. El pibe de los 2,24 metros la rompió el lunes metiendo 32 puntos, 8 rebotes y 6 asistencias. Una auténtica bestialidad. Pero no solo la descosió metiendo dobles y triples; también se plantó con firmeza y se armó un terrible tumulto tras un golpe durísimo a la figura neoyorquina, Jalen Brunson. La NBA decidió no darle una falta flagrante de oficio, por lo que esta noche en el Garden a "Wemby" lo va a recibir una silbatina ensordecedora. Nace un nuevo villano en la meca del básquet y el ambiente va a estar hermoso.
+
+Del lado de los Knicks hay sed de revancha inmediata. Jalen Brunson viene jugando con el corazón en la mano, pero necesita imperiosamente que aparezcan sus laderos. En el último partido quedaron en deuda nombres clave como Karl-Anthony Towns, que aportó apenas 11 puntos, y Mikal Bridges, que sufrió una noche negrísima con solo 2 unidades. El cuerpo técnico de New York sabe que si no ajustan la defensa sobre las penetraciones del base novato Stephon Castle (que la descolló con 23 puntos en el Juego 3) y no controlan las pérdidas de balón, la ventaja se les puede escurrir entre los dedos en un abrir y cerrar de ojos.
+
+¿Logrará New York hacerse fuerte de local por primera vez y ponerse a un pasito del anillo que se le niega desde 1973? ¿O los Spurs de Popovich volverán a congelar la Gran Manzana para empardar la historia y recuperar la ventaja de localía de cara al Juego 5 en San Antonio? Se viene una batalla campal de pura táctica, roce físico y épica.
+
+El trascendental encuentro se disputará este miércoles 10 de junio de 2026 a partir de las 21:30 (hora de Argentina) en el Madison Square Garden de Nueva York; la transmisión televisiva en vivo para todo el territorio argentino estará a cargo de la señal de ESPN, mientras que las opciones disponibles para seguir las alternativas del juego de forma online y por streaming incluirán a la plataforma Disney+ y al sistema oficial NBA League Pass.
