@@ -13,6 +13,5 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Título", name: "title", widget: "string"}
-      - {label: "Fecha", name: "date", widget: "datetime"}
       - {label: "Fecha y Hora", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm", default: ""}
       - {label: "Cuerpo de la nota", name: "body", widget: "markdown"}
