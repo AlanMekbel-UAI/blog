@@ -42,8 +42,6 @@
             color: var(--gold-light); 
             margin-bottom: 10px; 
             line-height: 1.2; 
-            
-            /* Ajustes críticos para evitar que el texto se corte */
             white-space: normal !important;
             word-break: break-word !important;
             overflow: visible !important;
@@ -102,6 +100,30 @@
             document.getElementById('blog').classList.add('hidden');
         }
 
+        // Función auxiliar para extraer de forma segura los campos de la nota (Front Matter)
+        function parseMetadata(text) {
+            const metadata = { title: "Sin título", img: "", rawDate: null };
+            const matches = text.match(/^---([\s\S]*?)---/);
+            if (matches) {
+                const lines = matches[1].split('\n');
+                lines.forEach(line => {
+                    const parts = line.split(':');
+                    if (parts.length >= 2) {
+                        const key = parts[0].trim();
+                        // Une el resto por si el valor contenía dos puntos (ej: URLs o datos temporales)
+                        let value = parts.slice(1).join(':').trim();
+                        // Limpia comillas al inicio y al final
+                        value = value.replace(/^['"]|['"]$/g, '');
+                        
+                        if (key === 'title') metadata.title = value;
+                        if (key === 'image') metadata.img = value;
+                        if (key === 'date') metadata.rawDate = value;
+                    }
+                });
+            }
+            return metadata;
+        }
+
         async function renderFeed() {
             const content = document.getElementById('blog-content');
             content.innerHTML = `<a onclick="goHome()" class="btn-back">← VOLVER</a><h2 style="font-family: 'Cormorant Garamond'; text-align: center;">BITÁCORA</h2><div id="feed">Cargando...</div>`;
@@ -114,26 +136,20 @@
 
                 let allPosts = [];
 
-                // Descargamos la info de todas las notas primero
                 for (let file of files) {
                     const postRes = await fetch(file.download_url);
                     const postText = await postRes.text();
                     
-                    const title = postText.match(/title:\s*["']?(.*?)["']?(\r?\n|$)/)?.[1] || "Sin título";
-                    const img = postText.match(/image:\s*["']?(.*?)["']?(\r?\n|$)/)?.[1] || "";
-                    // Buscamos el campo de fecha dentro de la nota
-                    const rawDate = postText.match(/date:\s*["']?(.*?)["']?(\r?\n|$)/)?.[1] || null;
+                    const meta = parseMetadata(postText);
                     const slug = file.name;
 
-                    allPosts.push({ title, img, rawDate, slug });
+                    allPosts.push({ title: meta.title, img: meta.img, rawDate: meta.rawDate, slug });
                 }
 
-                // Las ordenamos de la más NUEVA a la más VIEJA
                 allPosts.sort((a, b) => {
                     return new Date(b.rawDate || 0) - new Date(a.rawDate || 0);
                 });
 
-                // Las dibujamos en la pantalla con su fecha chiquita
                 for (let post of allPosts) {
                     let fechaTexto = "";
                     if (post.rawDate) {
@@ -164,15 +180,14 @@
                 const res = await fetch(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/posts/${slug}`);
                 const postText = await res.text();
                 
-                const title = postText.match(/title:\s*["']?(.*?)["']?(\r?\n|$)/)?.[1] || "Sin título";
-                const img = postText.match(/image:\s*["']?(.*?)["']?(\r?\n|$)/)?.[1] || "";
+                const meta = parseMetadata(postText);
                 const body = postText.split('---').pop().trim();
 
                 content.innerHTML = `
                     <a onclick="openBlog()" class="btn-back">← VOLVER AL LISTADO</a>
                     <article>
-                        ${img ? `<img src="${img}" class="full-note-img">` : ''}
-                        <h1 class="note-title">${title}</h1>
+                        ${meta.img ? `<img src="${meta.img}" class="full-note-img">` : ''}
+                        <h1 class="note-title">${meta.title}</h1>
                         <div class="note-text">${body}</div>
                     </article>
                 `;
