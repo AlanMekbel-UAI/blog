@@ -68,7 +68,6 @@
         const GITHUB_USER = "AlanMekbel-UAI"; 
         const GITHUB_REPO = "blog";
 
-        // Al cargar la página, chequear si venimos de un link de una nota
         window.onload = () => {
             const params = new URLSearchParams(window.location.search);
             if (params.has('post')) {
@@ -102,20 +101,44 @@
                 const feed = document.getElementById('feed');
                 feed.innerHTML = "";
 
-                // Ordenar por más recientes (reverse)
-                for (let file of files.reverse()) {
+                let allPosts = [];
+
+                // Descargamos la info de todas las notas primero
+                for (let file of files) {
                     const postRes = await fetch(file.download_url);
                     const postText = await postRes.text();
                     
                     const title = postText.match(/title:\s*["']?(.*?)["']?(\r?\n|$)/)?.[1] || "Sin título";
                     const img = postText.match(/image:\s*["']?(.*?)["']?(\r?\n|$)/)?.[1] || "";
+                    // Buscamos el campo de fecha dentro de la nota
+                    const rawDate = postText.match(/date:\s*["']?(.*?)["']?(\r?\n|$)/)?.[1] || null;
                     const slug = file.name;
 
+                    allPosts.push({ title, img, rawDate, slug });
+                }
+
+                // Las ordenamos de la más NUEVA a la más VIEJA
+                allPosts.sort((a, b) => {
+                    return new Date(b.rawDate || 0) - new Date(a.rawDate || 0);
+                });
+
+                // Las dibujamos en la pantalla con su fecha chiquita
+                for (let post of allPosts) {
+                    let fechaTexto = "";
+                    if (post.rawDate) {
+                        const dateObj = new Date(post.rawDate);
+                        fechaTexto = dateObj.toLocaleString('es-AR', {
+                            day: '2-digit', month: '2-digit', year: 'numeric',
+                            hour: '2-digit', minute: '2-digit'
+                        });
+                    }
+
                     feed.innerHTML += `
-                        <div class="preview-card" onclick="updateUrlAndRender('${slug}')">
-                            ${img ? `<img src="${img}" class="preview-img">` : ''}
-                            <h3 class="note-title" style="font-size: 1.5rem;">${title}</h3>
-                            <p style="font-size: 0.8rem; color: var(--gold);">Leer nota →</p>
+                        <div class="preview-card" onclick="updateUrlAndRender('${post.slug}')">
+                            ${post.img ? `<img src="${post.img}" class="preview-img">` : ''}
+                            ${fechaTexto ? `<span style="font-size: 0.72rem; color: var(--text-muted); display: block; margin-bottom: 6px; font-weight: 300; letter-spacing: 1px;">${fechaTexto}</span>` : ''}
+                            <h3 class="note-title" style="font-size: 1.5rem; margin-top: 0;">${post.title}</h3>
+                            <p style="font-size: 0.8rem; color: var(--gold); margin-bottom: 0;">Leer nota →</p>
                         </div>
                     `;
                 }
