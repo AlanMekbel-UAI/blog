@@ -28,9 +28,12 @@
 
         /* Preview del Feed */
         .preview-card { 
+            display: flex !important;
+            flex-direction: column !important;
             margin-bottom: 40px; cursor: pointer; border-bottom: 1px solid var(--border); 
             padding-bottom: 20px; transition: 0.3s;
-            display: block;
+            width: 100% !important;
+            box-sizing: border-box !important;
         }
         .preview-card:hover .note-title { color: var(--gold); }
         .preview-img { width: 100%; height: 200px; object-fit: cover; filter: grayscale(30%); margin-bottom: 15px; }
@@ -41,10 +44,18 @@
             font-size: 2.2rem; 
             color: var(--gold-light); 
             margin-bottom: 10px; 
-            line-height: 1.2; 
+            line-height: 1.3 !important; 
+            
+            /* Reset absoluto de cajas contenedoras */
             white-space: normal !important;
-            word-break: break-word !important;
+            word-wrap: break-word !important;
+            overflow-wrap: break-word !important;
+            word-break: normal !important;
             overflow: visible !important;
+            max-width: 100% !important;
+            display: block !important;
+            height: auto !important;
+            text-overflow: clip !important;
         }
         .note-text { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; color: var(--off-white); line-height: 1.8; white-space: pre-wrap; }
         
@@ -100,27 +111,44 @@
             document.getElementById('blog').classList.add('hidden');
         }
 
-        // Función auxiliar para extraer de forma segura los campos de la nota (Front Matter)
+        // Extractor avanzado e inmune a cortes por comillas o saltos de línea intermedios en el YAML front-matter
         function parseMetadata(text) {
             const metadata = { title: "Sin título", img: "", rawDate: null };
             const matches = text.match(/^---([\s\S]*?)---/);
             if (matches) {
                 const lines = matches[1].split('\n');
+                let currentKey = null;
+                
                 lines.forEach(line => {
-                    const parts = line.split(':');
-                    if (parts.length >= 2) {
-                        const key = parts[0].trim();
-                        // Une el resto por si el valor contenía dos puntos (ej: URLs o datos temporales)
-                        let value = parts.slice(1).join(':').trim();
-                        // Limpia comillas al inicio y al final
-                        value = value.replace(/^['"]|['"]$/g, '');
+                    const cleanLine = line.trim();
+                    if (!cleanLine) return;
+                    
+                    // Si contiene un separador de clave-valor limpio
+                    if (cleanLine.includes(':')) {
+                        const index = cleanLine.indexOf(':');
+                        const key = cleanLine.substring(0, index).trim();
+                        let val = cleanLine.substring(index + 1).trim();
                         
-                        if (key === 'title') metadata.title = value;
-                        if (key === 'image') metadata.img = value;
-                        if (key === 'date') metadata.rawDate = value;
+                        // Eliminar comillas envolventes si existen
+                        val = val.replace(/^['"]([\s\S]*?)['"]$/g, '$1');
+                        
+                        if (key === 'title' || key === 'image' || key === 'date') {
+                            currentKey = key;
+                            if (key === 'title') metadata.title = val;
+                            if (key === 'image') metadata.img = val;
+                            if (key === 'date') metadata.rawDate = val;
+                        } else {
+                            currentKey = null;
+                        }
+                    } else if (currentKey === 'title') {
+                        // En caso de que el título continúe en la línea siguiente en el archivo Markdown
+                        let appendVal = cleanLine.replace(/^['"]|['"]$/g, '');
+                        metadata.title += " " + appendVal;
                     }
                 });
             }
+            // Limpieza extra por si quedaron comillas rotas residuales
+            metadata.title = metadata.title.replace(/^['"]|['"]$/g, '').trim();
             return metadata;
         }
 
@@ -164,8 +192,8 @@
                         <div class="preview-card" onclick="updateUrlAndRender('${post.slug}')">
                             ${post.img ? `<img src="${post.img}" class="preview-img">` : ''}
                             ${fechaTexto ? `<span style="font-size: 0.72rem; color: var(--text-muted); display: block; margin-bottom: 6px; font-weight: 300; letter-spacing: 1px;">${fechaTexto}</span>` : ''}
-                            <h3 class="note-title" style="font-size: 1.5rem; margin-top: 0;">${post.title}</h3>
-                            <p style="font-size: 0.8rem; color: var(--gold); margin-bottom: 0;">Leer nota →</p>
+                            <h3 class="note-title" style="font-size: 1.5rem !important; margin-top: 0 !important;">${post.title}</h3>
+                            <p style="font-size: 0.8rem; color: var(--gold); margin-bottom: 0; margin-top: auto;">Leer nota →</p>
                         </div>
                     `;
                 }
@@ -185,9 +213,9 @@
 
                 content.innerHTML = `
                     <a onclick="openBlog()" class="btn-back">← VOLVER AL LISTADO</a>
-                    <article>
+                    <article style="width: 100%; box-sizing: border-box;">
                         ${meta.img ? `<img src="${meta.img}" class="full-note-img">` : ''}
-                        <h1 class="note-title">${meta.title}</h1>
+                        <h1 class="note-title" style="font-size: 2.2rem !important;">${meta.title}</h1>
                         <div class="note-text">${body}</div>
                     </article>
                 `;
