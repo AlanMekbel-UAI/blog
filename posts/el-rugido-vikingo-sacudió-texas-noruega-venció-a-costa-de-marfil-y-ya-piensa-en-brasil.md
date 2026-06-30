@@ -4,7 +4,7 @@ title: "El rugido vikingo sacudió Texas: Noruega venció a Costa de Marfil y ya
 date: 2026-06-30 18:59
 image: https://www.pagina12.com.ar/resizer/v2/3PCAFT3HS5BERDFXUBPTP7DC7Y.jpg?auth=248699958a43f7ca1967f9b6bf3fa05902613abd537108408fb05a2da5723c0f
 ---
-En un partido cargado de tensión dramática y emociones de alto vuelo en el Dallas Stadium, Noruega inscribió su nombre en los octavos de final de la Copa del Mundo 2026 al derrotar por 2-1 a Costa de Marfil. Los europeos, que regresaron a la gran cita mundialista tras una larga ausencia desde 1998, alcanzaron por primera vez en su historia una victoria en fase de eliminación directa gracias a la jerarquía de sus individualidades en los momentos de quiebre. \
+En un partido cargado de tensión dramática y emociones de alto vuelo en el AT&T Stadium de Dallas, Noruega escribió su nombre en los octavos de final de la Copa del Mundo 2026 al derrotar por 2-1 a Costa de Marfil. Los europeos, que regresaron a la gran cita mundialista tras una larga ausencia desde 1998, alcanzaron por primera vez en su historia una victoria en fase de eliminación directa.\
 \
 El trámite comenzó con un elenco marfileño dominante, manejando los hilos y replegando a la defensa escandinava. Sin embargo, carecieron de la puntada final en el área de Ørjan Nyland. Cuando el primer tiempo moría en una meseta, apareció la magia: a los 39 minutos, Martin Ødegaard frotó la lámpara, habilitó a Antonio Nusa sobre el sector izquierdo y el extremo, tras un enganche indescifrable, clavó un derechazo combado al segundo palo.\
 \
