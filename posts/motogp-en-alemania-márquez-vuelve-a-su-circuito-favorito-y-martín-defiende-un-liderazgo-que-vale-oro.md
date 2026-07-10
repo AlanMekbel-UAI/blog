@@ -1,5 +1,5 @@
 ---
-title: "MotoGP en Alemania: Márquez vuelve a su circuito favorito y Martín
+title: "MotoGP en Alemania: Marc Márquez vuelve a su circuito favorito y Martín
   defiende un liderazgo que vale oro"
 date: 2026-07-09 10:30
 image: https://resources.motogp.pulselive.com/photo-resources/2026/07/10/cf4b893f-ce06-456f-afab-292a44b5e75c/Report-MGP-PR-GER-TOP.jpg?width=1580&height=889
