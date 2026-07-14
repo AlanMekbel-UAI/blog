@@ -1,0 +1,21 @@
+---
+title: ¡BAILE GALEGO EN DALLAS! ESPAÑA DESPACHÓ A FRANCIA Y ES EL PRIMER
+  FINALISTA DEL MUNDIAL
+date: 2026-07-14 19:30
+image: https://pictures.tribuna.com/image/58430507-e044-4ab4-8cd4-a92bf39e7a3a?width=1920&quality=70
+---
+**La Roja dio una clase magistral de fútbol, venció 2-0 a los de Deschamps con goles de Oyarzabal y Pedro Porro, y se metió en la definición del domingo. Anularon por completo a un Mbappé desconocido y estiraron la racha invicta a 36 partidos. Ahora esperan por Argentina o Inglaterra.**
+
+No hubo equivalencias. Lo que en la previa se pintaba como un choque de planetas cerrado, de dientes apretados y final abierto, terminó siendo un monólogo táctico y un absoluto paseo de España. El equipo de Luis de la Fuente borró de la cancha a Francia, le clavó un 2-0 inapelable en el Estadio Dallas y se transformó con total justicia en el primer finalista de la Copa del Mundo 2026. La chapa de candidato ya le queda recontra chica a este equipo que vuela, que tiene la pelota como si fuera suya por ley y desarmó a los subcampeones del mundo en apenas un ratito de fútbol de alto vuelo.
+
+Desde el primer silbatazo del salvadoreño Iván Barton, se vio cuál iba a ser la postura de cada uno sobre el césped texano. España se adueñó de la pelota con un Rodri imperial en el eje medio y empezó a desgastar a una Francia excesivamente replegada, timorata y asustada con la velocidad de Williams y Lamine Yamal. La apertura del marcador no tardó en decaer por su propio peso: a los 22 minutos del primer tiempo, tras una falta infantil de Lucas Digne adentro del área, Mikel Oyarzabal se hizo cargo de la pena máxima y, con una categoría bárbara, la mandó a guardar contra el poste izquierdo de Maignan para poner el 1-0 y desatar la locura roja en las tribunas.
+
+Los de Deschamps sintieron el cachetazo pero no tuvieron reacción. El ataque francés, comandado por un Kylian Mbappé llamativamente apagado y desconectado, jamás pudo quebrar el cerrojo propuesto por la zaga central de Cubarsí y Laporte. De hecho, el primer tiempo terminó sin tiros francos al arco de un Unai Simón que fue un espectador de lujo. España dominaba el ritmo, recuperaba rápido y ponía a correr a sus extremos ante una defensa gala que hacía agua cada vez que la atacaban con espacios.
+
+En el complemento, cuando se esperaba la rebeldía herida de los *Bleus*, la "Furia" le dio el golpe de gracia con una jugada de baby fútbol. A los 12 minutos de la segunda mitad, tras una tremenda posesión colectiva, el lateral Pedro Porro se proyectó de manera fantástica, tiró una pared deliciosa con Dani Olmo y sacó un derechazo cruzado y letal para clavar el 2-0 definitivo que bajó la persiana. Lo que quedó de partido estuvo de más: Francia fue una sombra deslucida, Mbappé terminó amonestado por la frustración de no poder pasar a Cucurella y el festejo español se adueñó por completo de Dallas. España llegó a los 36 partidos invicto y ya espera rival para el domingo.
+
+Toda España ya sueña despierta con bordarse la segunda estrella en el pecho. El partido más importante de los últimos doce años tiene coordenadas confirmadas:\
+\
+Ahora, con el boleto a Nueva Jersey ya en el bolsillo de España, todas las miradas y los nervios del equipo de Luis de la Fuente se mudan inmediatamente a Atlanta. Es que mañana, desde las 16:00 (hora argentina), Argentina e Inglaterra se sacarán chispas en la otra semifinal del cuadro para definir quién será el rival de La Roja el domingo. Fiel a la historia, las cábalas y el folclore ya juegan su propio partido: la Scaloneta saltará al Mercedes-Benz Stadium vestida con la camiseta azul, la misma casaca alternativa con la que se eliminó a los ingleses en los triunfos históricos de México 1986 y Francia 1998.
+
+La gran final de la Copa del Mundo se disputará este domingo 19 de julio en el espectacular MetLife Stadium de Nueva Jersey (renombrado como Estadio Nueva York Nueva Jersey). Para los fanáticos que lo sigan desde territorio español, el pitazo inicial sonará exactamente a las 21:00 horas de España (CET). El partido se podrá disfrutar de manera gratuita y en directo en todo el país a través de la pantalla de La 1 de RTVE y por internet mediante la plataforma de streaming RTVE Play. ¡La mesa está servida para que España vuelva a reinar en el planeta fútbol!
