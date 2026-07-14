@@ -1,0 +1,19 @@
+---
+title: ¡MÁXIMA ALERTA EN ATLANTA! EL MEGAOPERATIVO BLINDADO PARA EVITAR
+  DISTURBIOS ENTRE ARGENTINA E INGLATERRA
+date: 2026-07-14 14:16
+image: https://www.clarin.com/2026/07/13/bovMaqvk6_1200x0__1.jpg
+---
+**El partido de mañana en el Mercedes-Benz Stadium fue catalogado como de "alto riesgo". Habrá ingresos divididos para las hinchadas —algo inédito en este Mundial—, un ejército de 1.600 policías y un estricto filtro tecnológico con la silenciosa "Alerta Halcón".**
+
+Mañana se juega otra semifinal para el infarto, pero esta vez la tensión excede por completo los límites del verde césped. Argentina e Inglaterra se vuelven a ver las caras en una cita mundialista y el clima que se respira en las calles de Atlanta es de un absoluto estado de alerta. La FIFA, el FBI y el comité organizador local no quieren dejar ningún cabo suelto ante la histórica y siempre latente rivalidad entre ambos países. Por eso, el Mercedes-Benz Stadium será blindado con un operativo de seguridad sin precedentes para esta Copa del Mundo.
+
+**"Alerta Halcón"**. Ese es el nombre en clave de la monumental estrategia que coordinó la ministra de Seguridad de la Nación, Alejandra Monteoliva, codo a codo con las fuerzas federales estadounidenses y la policía local. El veredicto de los despachos fue tajante: el encuentro fue calificado formalmente como de "alto riesgo", lo que obligó a romper los protocolos habituales de convivencia pacífica que se venían dando en el torneo.
+
+La medida más drástica y atípica de este Mundial tiene que ver con los accesos al imponente estadio techado. A diferencia de los partidos anteriores, donde las parcialidades se mezclaban amigablemente en los ingresos, mañana habrá un "embudo" de ingreso estrictamente dividido. El público argentino tendrá como acceso exclusivo y obligatorio la Puerta 4, mientras que los fanáticos ingleses ingresarán únicamente por la Puerta 3. Nadie que no corresponda a su sector podrá merodear la zona contraria. Para garantizar que esta división se cumpla a rajatabla, un ejército de 1.600 efectivos policiales vigilará de cerca cada metro del perímetro exterior.
+
+El filtro de las requisas en los ingresos también será implacable. Desde el Ministerio de Seguridad advirtieron que no se permitirá el ingreso de botellas ni de ningún elemento con contenido político, provocativo o racial. En ese sentido, se confirmó una restricción que promete traer polémica: estará terminantemente prohibido ingresar con insignias o banderas que lleven la imagen de las Islas Malvinas. Adentro de las tribunas no habrá una separación física con vallas, por lo que el comportamiento de la gente bajo el techo del estadio de Atlanta estará bajo la lupa de cientos de cámaras de alta definición.
+
+Para desactivar cualquier foco de violencia antes de que empiece, la tecnología juega su propio partido. El gobierno argentino cruzó con las autoridades de Estados Unidos la base de datos del programa Tribuna Segura, bloqueando el ingreso a territorio norteamericano de unos 33.000 sospechosos con derecho de admisión. La gran novedad es el funcionamiento de la "Alerta Halcón", un sistema de detección temprana que salta de manera silenciosa en los puestos de Migraciones cuando un barra o violento intenta salir de Argentina, dando aviso inmediato a las fuerzas de seguridad sin levantar sospechas en el momento.
+
+Mientras Lionel Scaloni buscó bajar los decibeles en conferencia de prensa asegurando que "es solo un partido de fútbol", en Buenos Aires también se toman recaudos. El Ministerio de Seguridad de la Nación ya coordinó con el gobierno de la Ciudad un fuerte esquema de prevención para custodiar el Obelisco ante posibles desmanes durante los festejos. Mañana se juega una batalla futbolística monumental, pero el principal objetivo de todos es que la fiesta termine en paz. ¡Que sea fútbol y nada más!
