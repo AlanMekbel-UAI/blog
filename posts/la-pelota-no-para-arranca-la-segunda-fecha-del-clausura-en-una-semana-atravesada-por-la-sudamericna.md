@@ -1,6 +1,6 @@
 ---
 title: "La pelota no para: arranca la segunda fecha del Clausura en una semana
-  atravesada por la Sudamericna"
+  atravesada por la Sudamericana"
 date: 2026-07-28 18:54
 image: https://imgs.search.brave.com/3ffVt52Q8aTQNWS2pzLKsMhmWUlouQl1dZp1D2kOMss/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50eWNzcG9ydHMu/Y29tL2ZpbGVzLzIw/MjYvMDcvMjYvOTc0/MDcyL3JpZXN0cmEt/Ym9jYV93ODYyLndl/YnA
 ---
